@@ -3,7 +3,7 @@
 *.tfstate
 *.tfstate.backup
 
-terraform.tfvars
+# terraform.tfvars
 
 *.log
 *.bak
