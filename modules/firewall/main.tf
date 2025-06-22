@@ -1,15 +1,11 @@
-resource "google_compute_firewall" "this" {
+resource "google_compute_firewall" "default" {
   name    = var.firewall_name
-  network = var.network  # Sử dụng network được truyền từ bên ngoài
-
-  allow {
-    protocol = "icmp"
-  }
-
+  network = var.network
   allow {
     protocol = var.protocol
     ports    = var.ports
   }
-
-  source_ranges = ["10.0.0.0/24"]
+  source_ranges = var.source_ranges
 }
+
+

@@ -1,32 +1,35 @@
 variable "project" {}
 variable "region" {}
-variable "zone" {}
-# variable "subnet_name" {}
+//network and subnet
+variable "network_name" {}
+variable "subnet_1_name" {}
+variable "subnet_2_name" {}
+variable "subnet_1_range" {}
+variable "subnet_2_range" {}
+variable "subnet_1_region" {}
+variable "subnet_2_region" {}
+
+//group instance
 variable "name" {}
-variable "subnet_range_1" {}
-variable "subnet_range_2" {}
+variable "zone" {}
+variable "max_replicas" {}
+variable "min_replicas" {}
+variable "target_cpu" {}
 variable "machine_type" {}
-variable "protocol" {}
-variable "ports" {}
-variable "group_name" {}
+variable "enable_public_ip" {
+  type = bool
+  default = false
+}
 variable "file_script" {
   type = string
   default = ""
 }
-variable "target_size" {
-  type = number
-  default = 3
-}
-variable "max_replicas" {
-  type = number
-  default = 5
-}
-variable "min_replicas" {
-  type = number
-  default = 3
-}
-variable "target" {
-  default = 0.6
+
+//firewall
+variable "ports" {
+  type = list(string)
 }
 
-
+variable "source_ranges" {
+  type = list(string)
+}

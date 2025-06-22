@@ -1,5 +1,7 @@
-variable "region" {}
-variable "name" {}
-# variable "subnet_name" {}
-variable "subnet_range_1" {}
-variable "subnet_range_2" {}
+variable "subnet_1_name" {}
+variable "subnet_2_name" {}
+variable "subnet_1_range" {}
+variable "subnet_2_range" {}
+variable "subnet_1_region" {}
+variable "subnet_2_region" {}
+variable "network_name" {}
