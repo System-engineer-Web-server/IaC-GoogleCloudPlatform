@@ -3,10 +3,8 @@
 *.tfstate
 *.tfstate.backup
 
-# Terraform vars nếu chứa thông tin nhạy cảm
 terraform.tfvars
 
-# IDE / OS / temp
 *.log
 *.bak
 .DS_Store
