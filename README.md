@@ -26,15 +26,15 @@ gcloud auth application-default login
 Clone the project to your local environment:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/System-engineer-Web-server/IaC-GoogleCloudPlatform.git
+cd IaC-GoogleCloudPlatform
 ```
 
 ---
 
 ## 🛠️ Configure Your Variables
 
-Edit the `terraform.tfvars` file to customize your deployment (e.g., project ID, region, zone, subnet ranges, etc.):
+Edit the `terraform.tfvars` file to customize your deployment with exmaple file that i deploy(e.g., project ID, region, zone, subnet ranges, etc.):
 
 ```hcl
 project_id     = "your-gcp-project-id"
@@ -43,6 +43,7 @@ zone           = "asia-southeast1-b"
 bucket_name    = "your-unique-bucket-name"
 machine_type   = "e2-micro"
 target_size    = 3
+...
 ```
 
 ---
@@ -66,7 +67,7 @@ terraform apply        # Apply the changes and deploy resources
 - **instance**: Compute Engine VMs
 - **instance_group**: Managed instance groups with autoscaling
 - **storage**: Cloud Storage buckets
-- **iam**: Service Accounts and IAM bindings
+<!-- - **iam**: Service Accounts and IAM bindings -->
 
 ---
 
@@ -79,5 +80,5 @@ terraform apply        # Apply the changes and deploy resources
 
 ## 📫 Contact
 
-For issues or questions, please open an issue or contact [your-email@example.com](mailto:your-email@example.com).
+For issues or questions, please open an issue or contact [your-email@example.com](mailto:thiennguyen01052004@gmail.com).
 
