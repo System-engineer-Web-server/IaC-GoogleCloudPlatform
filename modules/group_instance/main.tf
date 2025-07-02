@@ -40,7 +40,7 @@ resource "google_compute_instance_group_manager" "db-cluster" {
   name     = "${var.name}-db"
   base_instance_name = "db-cluster"
   zone               = var.zone
-  target_size = 3
+  target_size = 2
 
   version {
     name              = "${var.name}-db" 

@@ -33,3 +33,27 @@ variable "ports" {
 variable "source_ranges" {
   type = list(string)
 }
+
+variable "internal_static_ip" {
+  description = "Internal static IP address to assign to the VM"
+  type        = string
+  default     = null
+}
+
+variable "instance_count" {
+  type = number
+  default = 1
+}
+variable "internal_ip" {
+  type = list(string)
+  default = [ "" ]
+}
+
+variable "ssh_user" {
+  type = string
+  default = "tn18624"
+}
+variable "ssh_pubkey_path" {
+  type = string
+  default = "/home/tn18624/.ssh/gg_cloud.pub"
+}

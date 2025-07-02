@@ -16,7 +16,7 @@ zone = "asia-southeast1-b"
 max_replicas = 5
 min_replicas = 3
 target_cpu = 0.6
-machine_type = "e2-mdedium"
+machine_type = "e2-medium"
 enable_public_ip = true
 file_script = "~/thien.txt"
 
